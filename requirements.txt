@@ -1,0 +1,82 @@
+# RAG Project Requirements
+# Recommended Python: 3.11
+# Install with: pip install -r requirements.txt
+
+# -------------------------
+# LangChain RAG foundation
+# -------------------------
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-text-splitters>=1.0,<2.0
+
+# -------------------------
+# LLM providers
+# -------------------------
+langchain-groq>=1.0
+langchain-ollama>=1.0
+groq
+ollama
+
+# -------------------------
+# Vector database + embeddings
+# -------------------------
+chromadb
+langchain-chroma
+sentence-transformers
+langchain-huggingface
+huggingface-hub
+
+# -------------------------
+# Document loading / parsing
+# -------------------------
+pypdf
+python-docx
+docx2txt
+beautifulsoup4
+lxml
+markdown
+unstructured
+
+# -------------------------
+# Relational database / chat history
+# SQLite is built into Python; SQLAlchemy provides ORM support.
+# aiosqlite is useful if you use async database operations.
+# -------------------------
+# SQLAlchemy>=2.0
+# aiosqlite
+
+# -------------------------
+# Retrieval improvements
+# -------------------------
+rank-bm25
+flashrank
+tiktoken
+
+# -------------------------
+# Data processing / utilities
+# -------------------------
+numpy
+pandas
+python-dotenv
+pydantic
+requests
+httpx
+tenacity
+tqdm
+loguru
+PyYAML
+
+# -------------------------
+# App interface and API (use whichever you need)
+# -------------------------
+streamlit
+# fastapi
+# uvicorn[standard]
+# python-multipart
+
+# -------------------------
+# Development and testing
+# -------------------------
+# jupyter
+# ipykernel
+# pytest

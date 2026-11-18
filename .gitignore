@@ -1,0 +1,38 @@
+# .gitignore tells Git which files and folders it should ignore when uploading your project to GitHub.
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environment
+#Your .venv folder can contain hundreds or thousands of files. There is no need to upload all those installed libraries to GitHub.
+#Other developers can recreate their own environment using requirements.txt.
+.venv/
+venv/
+
+# Python cache
+# Whenever you run a Python program, Python can generate temporary cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter
+#When working with Jupyter Notebook, it automatically creates checkpoint folders.
+#You don't generally need to upload these temporary backup folders to GitHub.
+#So Git ignores them.
+.ipynb_checkpoints/
+
+# IDE and system files
+#Ignores the .vscode folder, which can contain editor-specific settings.
+.vscode/
+.DS_Store
+
+# What does / and * mean?
+# These are important symbols in .gitignore.
+# Symbol	Meaning	Example
+# *	Matches any characters	*.pyc
+# /	Indicates a directory or path boundary	.venv/
+# !	Creates an exception	!.env.example
+#	Comment	# Python cache
+# .	Often used in hidden filenames	.env
